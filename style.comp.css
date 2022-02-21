@@ -14,7 +14,8 @@
   --color-primary: #6AB89E;
   --color-primary-light: #CBF4E7;
   --color-primary-dark: #2D6A4F;
-  --color-white: #fff; }
+  --color-white: #fff;
+  --color-black: #000; }
 
 *,
 *::after,
@@ -121,6 +122,9 @@ body {
 
 .u-mb-big {
   margin-bottom: 15rem; }
+
+.u-mt-small {
+  margin-top: 2rem; }
 
 .hero {
   display: grid;
@@ -575,7 +579,7 @@ body {
 .about-hero {
   padding-left: 3rem;
   height: 80vh;
-  background-image: linear-gradient(to right, white 0%, white 50%, rgba(98, 255, 208, 0.4)), url(./images/rajagiri11.png);
+  background-image: linear-gradient(to right, white 0%, white 50%, rgba(98, 255, 208, 0.4)), url(../../../images/rajagiri11.png);
   background-size: cover;
   display: flex; }
   @media only screen and (max-width: 37.5em) {
@@ -966,11 +970,236 @@ body {
     height: 100%;
     width: 100%; }
 
+.getintouch-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 4rem; }
+  .getintouch-hero p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 28px;
+    letter-spacing: 0.0025em;
+    color: #1B4332; }
+
+.form-map-wrapper {
+  display: flex;
+  gap: 2rem;
+  height: 90rem; }
+
+.map {
+  flex: 0 0 50%;
+  /* background-image: url('../../../images/map_pattern.png');
+	background-size: contain;
+	background-repeat: no-repeat; */
+  /* height: 100%; */ }
+  .map img {
+    height: 100%;
+    width: 100%; }
+
+.form-section {
+  flex: 1;
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 5px; }
+  .form-section p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-primary); }
+
+.form {
+  padding: 8rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3rem;
+  column-gap: 2rem; }
+  .form h1 {
+    grid-column: 1 / -1; }
+  .form p {
+    grid-column: 1 / -1; }
+  .form__group {
+    display: flex;
+    flex-direction: column; }
+    .form__group--email {
+      grid-column: 1 / -1; }
+    .form__group--message {
+      grid-column: 1 / -1; }
+    .form__group--radio {
+      grid-column: 1 / -1; }
+    .form__group--btn {
+      grid-column: 2 / -1; }
+  .form__label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #00231F; }
+
+input[type='text'],
+input[type='email'],
+textarea[placeholder*='Write'] {
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: .8rem;
+  color: var(--color-primary);
+  font-family: inherit;
+  transition: all .3s; }
+  input[type='text']:focus,
+  input[type='email']:focus,
+  textarea[placeholder*='Write']:focus {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+  input[type='text']::-webkit-input-placeholder,
+  input[type='email']::-webkit-input-placeholder,
+  textarea[placeholder*='Write']::-webkit-input-placeholder {
+    color: var(--color-primary); }
+
+.send-message {
+  align-self: end;
+  cursor: pointer;
+  width: 20rem;
+  height: 5rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1B4332;
+  color: var(--color-white); }
+
+.lets-talk {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.3);
+  /* backdrop-filter: blur(40px); */
+  height: 40rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem; }
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  .address__container {
+    display: flex;
+    gap: 1rem; }
+  .address span {
+    font-size: 1.6rem;
+    color: #00231F; }
+  .address svg {
+    height: 2rem;
+    width: 2rem; }
+
+.social-icons {
+  display: flex;
+  gap: 2rem; }
+
+.service-hero {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem; }
+  .service-hero p {
+    font-size: 1.6rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    color: var(--color-primary); }
+
+.consults {
+  margin-top: 10rem;
+  display: flex;
+  gap: 20rem; }
+  .consults__border {
+    width: 80%;
+    border-bottom: .1px solid #ddd; }
+  .consults__appointment, .consults__treated {
+    flex: 0 0 20%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    gap: 2rem;
+    background-color: var(--color-white);
+    box-shadow: 3.49828px 3.49828px 13.9931px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    transform: rotate(-12deg); }
+    .consults__appointment--location, .consults__treated--location {
+      font-size: 1.6rem;
+      color: #1B4332; }
+    .consults__appointment img, .consults__treated img {
+      height: 6rem;
+      width: 6rem; }
+  .consults__treated {
+    transform: rotate(12deg) translateY(-12rem) translateX(5rem); }
+  .consults__link:visited, .consults__link:link {
+    height: 100%;
+    width: 100%;
+    background-color: #2D6A4F;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    text-decoration: none; }
+  .consults__link {
+    background: #CBF4E7;
+    color: #1B4332;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    text-decoration: none; }
+  .consults__consult {
+    flex: 0 0 20%;
+    height: 16rem;
+    background-color: var(--color-white);
+    box-shadow: 3.49828px 3.49828px 13.9931px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; }
+  .consults__treated {
+    flex: 0 0 20%;
+    height: 25rem; }
+
+.our-service {
+  padding: 5rem 5rem;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+  background-color: #CBF3E5;
+  /* height: 50rem; */ }
+
+.remove-mt {
+  margin-top: 0 !important; }
+
 .footer {
   margin-top: 8rem;
   padding: 9.6rem 0 9.6rem 0;
   /* background: linear-gradient(180deg, #0A3124 0%, #0C4532 100%); */
-  background-image: url(./images/footer-background.png);
+  background-image: url(../../images/footer-background.png);
   background-size: cover;
   position: relative; }
   .footer__container {
@@ -1228,6 +1457,57 @@ body {
     .section-our-hospital {
       padding: 4.8rem 1rem;
       /*600*/ } }
+
+/* ==================== */
+/* SECTION GET IN TOUCH */
+/* ==================== */
+.section-getintouch {
+  height: 40vh;
+  padding-top: 15rem;
+  position: relative; }
+
+.section-form-map {
+  margin-top: 5rem;
+  background-image: url(../../images/back_bg.png);
+  background-size: cover; }
+
+.section-lets-talk {
+  background-color: #CBF4E7;
+  background-image: url(../../images/back_bg2.png);
+  background-size: cover;
+  padding: 12rem 8rem; }
+
+/* ==================== */
+/* SECTION SERVICE PAGE */
+/* ==================== */
+.section-service-hero {
+  padding-top: 15rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  background: linear-gradient(172.46deg, #CBF4E7 21.25%, rgba(203, 244, 231, 0) 57.63%); }
+
+.section-our-services {
+  padding: 15rem 0; }
+  .section-our-services p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    color: #6AB99E; }
+
+/* ======================= */
+/* SECTION GUIDELINES PAGE */
+/* ======================= */
+.section-guidelines-hero {
+  height: 40vh;
+  padding-top: 15rem; }
+
+.section-guidelines {
+  height: 50vh;
+  background-color: #00231F; }
 
 /* pos abs
 background trasnparent

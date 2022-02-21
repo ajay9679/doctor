@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css" />
+        <link rel="stylesheet" type="text/css" href="./services-slider.css" />
+        <link rel="stylesheet" href="./style.comp.css" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+        <!-- FLICKITY -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        <title>Doctor</title>
+    </head>
+    <body>
+        <header class="header custom-white-bg">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./getInTouch.html">LOGO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-ul">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Awards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">General Guidelines</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="section-service-hero">
+                <div class="service-hero">
+                    <span class="subheading">Choose Wisely</span>
+                    <h1 class="heading-primary u-center-text u-mb-small">We Always Provide<br> Best Services</h1>
+                    <p>Having somewhere to go is home. Having someone to love is family. And having both is a blessing </p>
+                </div>
+                <div class="consults">
+                    <div class="consults__appointment">
+                        <img src="./images/face.png" />
+                        <div class="consults__border"></div>
+                        <address>
+                            <h1 class="heading-tertiary">Mr. Sharma</h1>
+                            <p class="consults__appointment--location u-center-text">Jaipur</p>
+                        </address>
+                        <a href="" class="consults__link" target="_blank">Book Appointment</a>
+                    </div>
+                    <div class="consults__consult">
+                        <h1 class="heading-tertiary u-mt-small">Consult</h1>
+                        <img src="./images/rect.png" />
+                        <img src="./images/rect.png" />
+                        <img src="./images/rect2.png" />
+                    </div>
+                    <div class="consults__treated">
+                        <img src="./images/face.png" />
+                        <div class="consults__border"></div>
+                        <address>
+                            <h1 class="heading-tertiary">Mr. Sharma</h1>
+                            <p class="consults__treated--location u-center-text">Jaipur</p>
+                        </address>
+                        <a href="" class="consults__link" target="_blank">Treated</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section-our-services">
+                <h1 class="heading-secondary u-center-text u-mb-small">Our Services</h1>
+                <p class="u-center-text">Having somewhere to go is home. Having someone to love is family. And having both is a blessing </p>
+                <div class="our-service">
+                    <div class="myslider" style="margin: 20rem 0">
+                        <div class="item a slider1">
+                            <div class="box1">
+                                <div class="box1-image">
+                                    <img src="./images/food1.png" />
+                                </div>
+                                <div class="box1-text">
+                                    <h4 class="heading-secondary custom-white">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box1-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="box2">
+                                <div class="box2-image">
+                                    <img src="./images/food1.png" class="box2-img" />
+                                </div>
+                                <div class="box2-text">
+                                    <h4 class="heading-secondary custom-white">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box2-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="box3">
+                                <div class="box3-image">
+                                    <img src="./images/food1.png" class="box3-img" />
+                                </div>
+                                <div class="box3-text">
+                                    <h4 class="heading-secondary">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box3-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="box4">
+                                <div class="box4-image">
+                                    <img src="./images/food1.png" class="box4-img" />
+                                </div>
+                                <div class="box4-text">
+                                    <h4 class="heading-secondary custom-white">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box4-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item b slider1">
+                            <div class="box1">
+                                <div class="box1-image">
+                                    <img src="./images/food1.png" />
+                                </div>
+                                <div class="box1-text">
+                                    <h4 class="heading-secondary custom-white">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box1-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="box2">
+                                <div class="box2-image">
+                                    <img src="./images/food1.png" class="box2-img" />
+                                </div>
+                                <div class="box2-text">
+                                    <h4 class="heading-secondary custom-white">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box2-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="box3">
+                                <div class="box3-image">
+                                    <img src="./images/food1.png" class="box3-img" />
+                                </div>
+                                <div class="box3-text">
+                                    <h4 class="heading-secondary">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box3-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="box4">
+                                <div class="box4-image">
+                                    <img src="./images/food1.png" class="box4-img" />
+                                </div>
+                                <div class="box4-text">
+                                    <h4 class="heading-secondary custom-white">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box4-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item c slider1">
+                            <div class="box1">
+                                <div class="box1-image">
+                                    <img src="./images/food1.png" />
+                                </div>
+                                <div class="box1-text">
+                                    <h4 class="heading-secondary custom-white">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box1-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="box2">
+                                <div class="box2-image">
+                                    <img src="./images/food1.png" class="box2-img" />
+                                </div>
+                                <div class="box2-text">
+                                    <h4 class="heading-secondary custom-white">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box2-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="box3">
+                                <div class="box3-image">
+                                    <img src="./images/food1.png" class="box3-img" />
+                                </div>
+                                <div class="box3-text">
+                                    <h4 class="heading-secondary">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box3-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="box4">
+                                <div class="box4-image">
+                                    <img src="./images/food1.png" class="box4-img" />
+                                </div>
+                                <div class="box4-text">
+                                    <h4 class="heading-secondary custom-white">Breast Cancer</h4>
+                                    <p>
+                                        Breast cancer can occur in women and rarely in men.
+                                        Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes.
+                                    </p>
+                                    <a href="" class="box4-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-testimonials">
+                <div class="testimonials">
+                    <div class="testimonials-text containers">
+                        <h4 class="subheading">PATIENT TESTIMONIALS</h4>
+                        <h1>WHAT OUR PATIENTS THINK OF US</h1>
+                    </div>
+                    <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false }'>
+                        <!-- <div class="carousel-cell"></div> -->
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell">
+                            <div class="test">
+                                <blockquote class="test__text">
+                                    I recently found myself under your care for a cardiac issue. While there, accompanied by my wife, we found that the entire staff at Jamaica Hospital was exceedingly professional and efficient, from your E.R. receptionists to the cardiac care team. You should be proud of your outstanding staff and service.
+                                </blockquote>
+                                <address class="test__author">
+                                    <img src="./images/testimonial.png" class="testimonial__photo" />
+                                    <h4 class="heading-tertiary">Amit Lepcha</h4>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="test">
+                                <blockquote class="test__text">
+                                    I recently found myself under your care for a cardiac issue. While there, accompanied by my wife, we found that the entire staff at Jamaica Hospital was exceedingly professional and efficient, from your E.R. receptionists to the cardiac care team. You should be proud of your outstanding staff and service.
+                                </blockquote>
+                                <address class="test__author">
+                                    <img src="./images/testimonial.png" class="testimonial__photo" />
+                                    <h4 class="heading-tertiary">Amit Lepcha</h4>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="test">
+                                <blockquote class="test__text">
+                                    I recently found myself under your care for a cardiac issue. While there, accompanied by my wife, we found that the entire staff at Jamaica Hospital was exceedingly professional and efficient, from your E.R. receptionists to the cardiac care team. You should be proud of your outstanding staff and service.
+                                </blockquote>
+                                <address class="test__author">
+                                    <img src="./images/testimonial.png" class="testimonial__photo" />
+                                    <h4 class="heading-tertiary">Amit Lepcha</h4>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="containers footer__container">
+                <div class="footer__logo-col">
+                    <h4 class="heading-tertiary">LOGO</h4>
+                    <address class="footer__address">
+                        <div class="footer__address--nav">
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-home"></use>
+                            </svg>
+                            <span>xyz, hudosn lane 54446</span>
+                        </div>
+                        <div class="footer__address--nav">
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-gmail"></use>
+                            </svg>
+                            <span>xyz@gmail.com</span>
+                        </div>
+                        <div class="footer__address--nav">
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                            <span>+91 987654321</span>
+                        </div>
+                    </address>
+                </div>
+                <div class="footer__nav--col1">
+                    <p>MENU</p>
+                    <ul class="footer__nav--list">
+                        <li><a href="">Work</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="">Schedule</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav--col2">
+                    <p>USEFUL LINKS</p>
+                    <ul class="footer__nav--list">
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Cookie Policy</a></li>
+                        <li><a href="">Purchasing Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Career</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <p>CONTACT US</p>
+                    <form class="footer__newsletter--form">
+                        <input type="text" name="signup" placeholder="Your Email" />
+                        <button>
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="legal containers">
+                <p>&copy; 2020  All rights reserved.  </p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+            $('.myslider').slick({
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                vertical: true,
+                verticalSwiping: true
+            });
+        </script>
+    </body>
+</html>

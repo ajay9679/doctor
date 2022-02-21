@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css" />
+        <link rel="stylesheet" href="./style.comp.css" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+        <!-- FLICKITY -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script defer src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        <title>Doctor</title>
+    </head>
+    <body>
+        <header class="header custom-white-bg">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./getInTouch.html">LOGO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-ul">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Awards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">General Guidelines</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="section-getintouch">
+                <div class="getintouch-hero">
+                    <h1 class="heading-primary u-mb-small u-center-text">GET IN TOUCH</h1>
+                    <p>Just drop us a line. we will be glad to answer your queries.</p>
+                </div>
+            </section>
+            <section class="section-form-map">
+                <div class="form-map-wrapper">
+                    <div class="map">
+                        <img src="./images/map_pattern.png" />
+                    </div>
+                    <div class="form-section">
+                        <form class="form">
+                            <h1 class="heading-secondary">Get in Touch</h1>
+                            <p class="u-mb-small">Fill up the form our team will get back to you within 24 Hours</p>
+                            <div class="form__group">
+                                <label class="form__label" for="fname">First Name</label>
+                                <input type="text" name="" id="fname" placeholder="Enter your First Name" />
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="lname">Last Name</label>
+                                <input type="text" name="" id="lname" placeholder="Enter your First Name" />
+                            </div>
+                            <div class="form__group form__group--email">
+                                <label class="form__label" for="email">Email</label>
+                                <input type="email" name="" id="email" placeholder="Enter your Email Address" />
+                            </div>
+
+                            <div class="form__group">
+                                <label class="form__label" for="subject">Subject</label>
+                                <input type="text" name="" id="subject" placeholder="Enter your Subject in here" />
+                            </div>
+
+                            <div class="form__group form__group--message">
+                                <label class="form__label" for="message">Message</label>
+                                <textarea id="message" rows="4" cols="50" placeholder="Write your messages in here"></textarea>
+                            </div>
+
+                            <div class="form__group form__group--btn">
+                                <button class="send-message">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section-lets-talk">
+                <div class="lets-talk">
+                    <h1 class="heading-secondary">Let's talk with Us</h1>
+                    <address class="address">
+                        <div class="address__container">
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-home"></use>
+                            </svg>
+                            <span>xyz, hudson lane 54446</span>
+                        </div>
+                        <div class="address__container">
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-forward_to_inbox"></use>
+                            </svg>
+                            <span>xyz@email.com</span>
+                        </div>
+                        <div class="address__container">
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                            <span>+91-88446628210</span>
+                        </div>
+                    </address>
+                    <div class="social-icons">
+                        <a href="" target="_blank"><img src="./images/social-icons/facebook.png" /></a>
+                        <a href="" target="_blank"><img src="./images/social-icons/twitter.png" /></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer remove-mt">
+            <div class="containers footer__container">
+                <div class="footer__logo-col">
+                    <h4 class="heading-tertiary">LOGO</h4>
+                    <address class="footer__address">
+                        <div class="footer__address--nav">
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-home"></use>
+                            </svg>
+                            <span>xyz, hudson lane 54446</span>
+                        </div>
+                        <div class="footer__address--nav">
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-gmail"></use>
+                            </svg>
+                            <span>xyz@gmail.com</span>
+                        </div>
+                        <div class="footer__address--nav">
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                            <span>+91 987654321</span>
+                        </div>
+                    </address>
+                </div>
+                <div class="footer__nav--col1">
+                    <p>MENU</p>
+                    <ul class="footer__nav--list">
+                        <li><a href="">Work</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="">Schedule</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav--col2">
+                    <p>USEFUL LINKS</p>
+                    <ul class="footer__nav--list">
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Cookie Policy</a></li>
+                        <li><a href="">Purchasing Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Career</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <p>CONTACT US</p>
+                    <form class="footer__newsletter--form">
+                        <input type="text" name="signup" placeholder="Your Email" />
+                        <button>
+                            <svg>
+                                <use xlink:href="svg/symbol-defs.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="legal containers">
+                <p>&copy; 2020  All rights reserved.  </p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
